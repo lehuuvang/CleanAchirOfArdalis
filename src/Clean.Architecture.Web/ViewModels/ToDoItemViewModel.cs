@@ -8,6 +8,7 @@ public class ToDoItemViewModel
   public string? Title { get; set; }
   public string? Description { get; set; }
   public bool IsDone { get; private set; }
+  public string test { get; private set; }
 
   public static ToDoItemViewModel FromToDoItem(ToDoItem item)
   {
@@ -17,6 +18,7 @@ public class ToDoItemViewModel
       Title = item.Title,
       Description = item.Description,
       IsDone = item.IsDone
+      test = item.test
     };
   }
 }
